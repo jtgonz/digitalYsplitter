@@ -8251,7 +8251,7 @@ Production Part - 8199
 <plain>
 <text x="20.32" y="238.76" size="5.08" layer="94">Processor</text>
 <wire x1="256.54" y1="248.92" x2="345.44" y2="248.92" width="0.6096" layer="94"/>
-<text x="261.62" y="238.76" size="5.08" layer="94">External Flash</text>
+<text x="261.62" y="238.76" size="5.08" layer="94">LED input</text>
 <wire x1="256.54" y1="248.92" x2="256.54" y2="165.1" width="0.6096" layer="94"/>
 <wire x1="345.44" y1="248.92" x2="345.44" y2="165.1" width="0.6096" layer="94"/>
 <wire x1="256.54" y1="165.1" x2="345.44" y2="165.1" width="0.6096" layer="94"/>
