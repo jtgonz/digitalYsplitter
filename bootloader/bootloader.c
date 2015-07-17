@@ -47,7 +47,7 @@ static void led_init()
 
 static void led_toggle()
 {
-    GPIOD_PTOR = led_bit;
+    GPIOB_PTOR = led_bit;
 }
 
 static bool test_boot_token()
