@@ -16860,10 +16860,6 @@ Modified from Laen's PCB Order Design Rules</description>
 <attribute name="NAME" x="13.885" y="9.338" size="1.016" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="VALUE" x="12.885" y="11.305" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LED1" library="adafruit" package="CHIPLED_0805" value="STATUS" x="2.3" y="3.9" smashed="yes">
-<attribute name="NAME" x="1.08" y="3.98" size="1.016" layer="25" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="4.84" y="2.63" size="1.27" layer="27" rot="R90"/>
-</element>
 <element name="Q1" library="blinkinlabs" package="CRSYTAL_2520" value="16MHz" x="22.75" y="8.25" smashed="yes" rot="R180">
 <attribute name="VALUE" x="23.75" y="11.25" size="1.27" layer="27" rot="R180"/>
 <attribute name="NAME" x="22.75" y="8.25" size="1.016" layer="25" font="vector" rot="R180" align="center"/>
@@ -16875,10 +16871,6 @@ Modified from Laen's PCB Order Design Rules</description>
 <element name="R2" library="adafruit" package="R0402" value="33" x="9.7" y="14.25" smashed="yes">
 <attribute name="NAME" x="11.365" y="14.212" size="1.016" layer="25" font="vector" align="center"/>
 <attribute name="VALUE" x="9.065" y="12.218" size="1.27" layer="27"/>
-</element>
-<element name="R4" library="adafruit" package="R0402" value="470" x="3.95" y="3.9" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.938" y="2.415" size="1.016" layer="25" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="5.982" y="3.265" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="CON1" library="blinkinlabs" package="USB_MICRO_THRUHOLE" value="USB_MICROSMT+THRUHULE" x="1.675" y="12.5" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-3.325" y="16.31" size="1.27" layer="27" rot="R270"/>
@@ -16957,9 +16949,9 @@ Modified from Laen's PCB Order Design Rules</description>
 <element name="R8" library="adafruit" package="R0402" value="470" x="28.4" y="-2.1"/>
 <element name="LED4" library="adafruit" package="CHIPLED_0805" value="STATUS" x="28.4" y="-0.6" rot="R270"/>
 <element name="R9" library="adafruit" package="R0402" value="470" x="16.4" y="-2.1"/>
-<element name="LED5" library="adafruit" package="CHIPLED_0805" value="STATUS" x="16.4" y="-0.6" rot="R270"/>
+<element name="LED1" library="adafruit" package="CHIPLED_0805" value="STATUS" x="16.4" y="-0.6" rot="R270"/>
 <element name="R10" library="adafruit" package="R0402" value="470" x="12.4" y="-2.1"/>
-<element name="LED6" library="adafruit" package="CHIPLED_0805" value="STATUS" x="12.4" y="-0.6" rot="R270"/>
+<element name="LED0" library="adafruit" package="CHIPLED_0805" value="STATUS" x="12.4" y="-0.6" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -17198,7 +17190,6 @@ Modified from Laen's PCB Order Design Rules</description>
 <contactref element="JP1" pad="1"/>
 </signal>
 <signal name="+3V3">
-<contactref element="R4" pad="2"/>
 <contactref element="C2" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="U1" pad="7"/>
@@ -17224,16 +17215,12 @@ Modified from Laen's PCB Order Design Rules</description>
 <wire x1="14.5" y1="10.7" x2="13.8" y2="10" width="0.254" layer="1"/>
 <wire x1="17.5" y1="9.725" x2="17.5" y2="8.325" width="0.254" layer="1"/>
 <contactref element="CON2" pad="1"/>
-<wire x1="15.2" y1="2.84975" x2="15.2" y2="5.5" width="0.6096" layer="1"/>
-<wire x1="15.2" y1="5.5" x2="15.2" y2="8" width="0.6096" layer="1"/>
+<wire x1="15.2" y1="2.84975" x2="15.2" y2="8" width="0.6096" layer="1"/>
 <wire x1="15.2" y1="8" x2="15.2" y2="8.5" width="0.6096" layer="1"/>
 <wire x1="15.2" y1="8.5" x2="15.2" y2="8.6" width="0.6096" layer="1"/>
 <wire x1="15.375" y1="12" x2="15.375" y2="11.125" width="0.6096" layer="16"/>
 <wire x1="15.375" y1="11.125" x2="14.25" y2="10" width="0.6096" layer="16"/>
 <wire x1="14.25" y1="10" x2="13.8" y2="10" width="0.6096" layer="16"/>
-<wire x1="4.75" y1="5.5" x2="15.2" y2="5.5" width="0.254" layer="1"/>
-<wire x1="3.95" y1="4.55" x2="3.95" y2="4.7" width="0.254" layer="1"/>
-<wire x1="3.95" y1="4.7" x2="4.75" y2="5.5" width="0.254" layer="1"/>
 <wire x1="15.2" y1="8.6" x2="13.8" y2="10" width="0.6096" layer="1"/>
 <wire x1="15.225" y1="8.525" x2="15.2" y2="8.5" width="0.2032" layer="1"/>
 <wire x1="16.67" y1="2.23" x2="15.81975" y2="2.23" width="0.6096" layer="1"/>
@@ -17287,7 +17274,7 @@ Modified from Laen's PCB Order Design Rules</description>
 <wire x1="18.5" y1="9.725" x2="18.5" y2="5.48" width="0.2032" layer="1"/>
 <wire x1="18.5" y1="5.48" x2="19.21" y2="4.77" width="0.2032" layer="1"/>
 <contactref element="CON2" pad="4"/>
-<contactref element="LED6" pad="C"/>
+<contactref element="LED0" pad="C"/>
 <wire x1="13.45" y1="-0.6" x2="13.45" y2="-0.15" width="0.2032" layer="1"/>
 <wire x1="13.45" y1="-0.15" x2="14.5" y2="0.9" width="0.2032" layer="1"/>
 <wire x1="14.5" y1="0.9" x2="19.8" y2="0.9" width="0.2032" layer="1"/>
@@ -17303,7 +17290,7 @@ Modified from Laen's PCB Order Design Rules</description>
 <wire x1="21.75" y1="2.23" x2="20.5" y2="3.48" width="0.2032" layer="1"/>
 <wire x1="19" y1="9.725" x2="19" y2="6.75" width="0.2032" layer="1"/>
 <contactref element="CON2" pad="5"/>
-<contactref element="LED5" pad="C"/>
+<contactref element="LED1" pad="C"/>
 <wire x1="17.45" y1="-0.6" x2="17.45" y2="0.05" width="0.2032" layer="1"/>
 <wire x1="17.45" y1="0.05" x2="17.8" y2="0.4" width="0.2032" layer="1"/>
 <wire x1="17.8" y1="0.4" x2="19.92" y2="0.4" width="0.2032" layer="1"/>
@@ -17341,36 +17328,6 @@ Modified from Laen's PCB Order Design Rules</description>
 <wire x1="17.6" y1="19.8" x2="17.6" y2="17.5" width="0.2032" layer="1"/>
 <wire x1="17.6" y1="17.5" x2="18.5" y2="16.6" width="0.2032" layer="1"/>
 <wire x1="18.5" y1="16.6" x2="18.5" y2="15.275" width="0.2032" layer="1"/>
-</signal>
-<signal name="STATUS">
-<contactref element="LED1" pad="C"/>
-<wire x1="9" y1="7.5" x2="9.25" y2="7.75" width="0.2032" layer="1"/>
-<wire x1="9.25" y1="7.75" x2="9.25" y2="11.75" width="0.2032" layer="1"/>
-<contactref element="U1" pad="31"/>
-<wire x1="17" y1="15.275" x2="17" y2="16.25" width="0.2032" layer="1"/>
-<wire x1="17" y1="16.25" x2="16.75" y2="16.5" width="0.2032" layer="1"/>
-<via x="11.25" y="14.75" extent="1-16" drill="0.3"/>
-<via x="9.5" y="12" extent="1-16" drill="0.3"/>
-<wire x1="9" y1="7.5" x2="4.75" y2="7.5" width="0.2032" layer="1"/>
-<wire x1="4.75" y1="7.5" x2="4.5" y2="7.25" width="0.2032" layer="1"/>
-<wire x1="4.5" y1="7.25" x2="4.5" y2="6.25" width="0.2032" layer="1"/>
-<wire x1="4.5" y1="6.25" x2="4" y2="5.75" width="0.2032" layer="1"/>
-<wire x1="4" y1="5.75" x2="2.75" y2="5.75" width="0.2032" layer="1"/>
-<wire x1="2.75" y1="5.75" x2="2.3" y2="5.3" width="0.2032" layer="1"/>
-<wire x1="2.3" y1="4.95" x2="2.3" y2="5.3" width="0.2032" layer="1"/>
-<wire x1="9.25" y1="11.75" x2="9.5" y2="12" width="0.2032" layer="1"/>
-<wire x1="9.5" y1="12" x2="11" y2="13.5" width="0.2032" layer="16"/>
-<wire x1="12.25" y1="16.5" x2="16.75" y2="16.5" width="0.2032" layer="1"/>
-<wire x1="11.25" y1="14.75" x2="11.25" y2="15.5" width="0.2032" layer="1"/>
-<wire x1="11.25" y1="15.5" x2="12.25" y2="16.5" width="0.2032" layer="1"/>
-<wire x1="11" y1="13.5" x2="11" y2="14.5" width="0.2032" layer="16"/>
-<wire x1="11" y1="14.5" x2="11.25" y2="14.75" width="0.2032" layer="16"/>
-</signal>
-<signal name="N$16">
-<contactref element="R4" pad="1"/>
-<contactref element="LED1" pad="A"/>
-<wire x1="3.95" y1="3.25" x2="2.7" y2="3.25" width="0.254" layer="1"/>
-<wire x1="2.7" y1="3.25" x2="2.3" y2="2.85" width="0.254" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="U1" pad="19"/>
@@ -17426,9 +17383,6 @@ Modified from Laen's PCB Order Design Rules</description>
 <contactref element="CON3" pad="P$3"/>
 <wire x1="28.85" y1="16.1" x2="30.98" y2="18.23" width="0.2032" layer="1"/>
 <wire x1="30.98" y1="18.23" x2="31.246" y2="18.23" width="0.2032" layer="1"/>
-</signal>
-<signal name="POWER_ENABLE">
-<contactref element="U1" pad="29"/>
 </signal>
 <signal name="PA4">
 <contactref element="U1" pad="16"/>
@@ -17620,13 +17574,13 @@ Modified from Laen's PCB Order Design Rules</description>
 </signal>
 <signal name="N$17">
 <contactref element="R9" pad="1"/>
-<contactref element="LED5" pad="A"/>
+<contactref element="LED1" pad="A"/>
 <wire x1="15.35" y1="-0.6" x2="15.35" y2="-1.7" width="0.2032" layer="1"/>
 <wire x1="15.35" y1="-1.7" x2="15.75" y2="-2.1" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="R10" pad="1"/>
-<contactref element="LED6" pad="A"/>
+<contactref element="LED0" pad="A"/>
 <wire x1="11.35" y1="-0.6" x2="11.35" y2="-1.7" width="0.2032" layer="1"/>
 <wire x1="11.35" y1="-1.7" x2="11.75" y2="-2.1" width="0.2032" layer="1"/>
 </signal>

@@ -8182,10 +8182,7 @@ Production Part - 8199
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0402" value="100nF"/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R0402" value="470"/>
-<part name="LED1" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="STATUS"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="C3" library="adafruit" deviceset="C-US" device="C0402" value="100nF"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
@@ -8240,10 +8237,10 @@ Production Part - 8199
 <part name="LED4" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="STATUS"/>
 <part name="3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="R9" library="adafruit" deviceset="R-US_" device="R0402" value="470"/>
-<part name="LED5" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="STATUS"/>
+<part name="LED1" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="STATUS"/>
 <part name="3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="R10" library="adafruit" deviceset="R-US_" device="R0402" value="470"/>
-<part name="LED6" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="STATUS"/>
+<part name="LED0" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="STATUS"/>
 <part name="3V7" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
@@ -8268,10 +8265,6 @@ Production Part - 8199
 <wire x1="104.14" y1="40.64" x2="251.46" y2="40.64" width="0.6096" layer="94"/>
 <wire x1="251.46" y1="124.46" x2="251.46" y2="40.64" width="0.6096" layer="94"/>
 <text x="20.32" y="114.3" size="5.08" layer="94">Buttons</text>
-<text x="165.1" y="134.62" size="1.778" layer="91">Design Note:
-Signals POWER_ENABLE, STATUS, SW2, SW1
-are GPIO and can be swapped to any other
-pin besides the ones on Port C</text>
 <text x="22.86" y="132.08" size="1.778" layer="91">Design Note:
 TPD4S012 is an ESD supression circuit, and are
 to protect the USB lines from static from the USB
@@ -8289,11 +8282,6 @@ FRDM-K20D50M reference design.
 <wire x1="256.54" y1="104.14" x2="256.54" y2="40.64" width="0.6096" layer="94"/>
 <wire x1="345.44" y1="104.14" x2="345.44" y2="40.64" width="0.6096" layer="94"/>
 <wire x1="256.54" y1="40.64" x2="345.44" y2="40.64" width="0.6096" layer="94"/>
-<text x="261.62" y="170.18" size="1.778" layer="91">Design Note:
-This is a generic flash pinout, there are
-equivalent parts from Winbond, Spansion, etc.
-Use the hardware chip select function to avoid
-conflicting with the LED output DMA.</text>
 <text x="261.62" y="45.72" size="1.778" layer="91">Design Note:
 Disconnect USB before connecting to external power
 via this input. There isn't a protection diode to
@@ -8325,12 +8313,7 @@ buttons.</text>
 <instance part="GND15" gate="1" x="81.28" y="205.74"/>
 <instance part="GND10" gate="1" x="302.26" y="195.58"/>
 <instance part="C1" gate="G$1" x="66.04" y="215.9"/>
-<instance part="R4" gate="G$1" x="228.6" y="185.42" rot="R90"/>
-<instance part="LED1" gate="G$1" x="228.6" y="175.26"/>
 <instance part="GND12" gate="1" x="35.56" y="78.74"/>
-<instance part="3V3" gate="G$1" x="228.6" y="195.58" smashed="yes">
-<attribute name="VALUE" x="226.06" y="196.85" size="1.778" layer="96"/>
-</instance>
 <instance part="P+9" gate="1" x="116.84" y="226.06" smashed="yes">
 <attribute name="VALUE" x="114.3" y="227.33" size="1.778" layer="96"/>
 </instance>
@@ -8433,12 +8416,12 @@ buttons.</text>
 <attribute name="VALUE" x="58.42" y="19.05" size="1.778" layer="96"/>
 </instance>
 <instance part="R9" gate="G$1" x="10.16" y="7.62" rot="R90"/>
-<instance part="LED5" gate="G$1" x="10.16" y="-2.54"/>
+<instance part="LED1" gate="G$1" x="10.16" y="-2.54"/>
 <instance part="3V6" gate="G$1" x="10.16" y="17.78" smashed="yes">
 <attribute name="VALUE" x="7.62" y="19.05" size="1.778" layer="96"/>
 </instance>
 <instance part="R10" gate="G$1" x="22.86" y="7.62" rot="R90"/>
-<instance part="LED6" gate="G$1" x="22.86" y="-2.54"/>
+<instance part="LED0" gate="G$1" x="22.86" y="-2.54"/>
 <instance part="3V7" gate="G$1" x="22.86" y="17.78" smashed="yes">
 <attribute name="VALUE" x="20.32" y="19.05" size="1.778" layer="96"/>
 </instance>
@@ -8683,11 +8666,6 @@ buttons.</text>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="3V3" gate="G$1" pin="+3V3"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="193.04" x2="228.6" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="66.04" y1="220.98" x2="81.28" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="218.44" x2="81.28" y2="220.98" width="0.1524" layer="91"/>
@@ -8788,7 +8766,7 @@ buttons.</text>
 <pinref part="CON2" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="LED6" gate="G$1" pin="C"/>
+<pinref part="LED0" gate="G$1" pin="C"/>
 <wire x1="22.86" y1="-7.62" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
 <label x="22.86" y="-15.24" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -8805,7 +8783,7 @@ buttons.</text>
 <pinref part="CON2" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="-15.24" width="0.1524" layer="91"/>
 <label x="10.16" y="-15.24" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -8861,22 +8839,6 @@ buttons.</text>
 <label x="195.58" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STATUS" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="228.6" y1="170.18" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PTD6"/>
-<wire x1="187.96" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-<label x="195.58" y="162.56" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="228.6" y1="180.34" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RESET" class="0">
 <segment>
 <label x="111.76" y="160.02" size="1.778" layer="95"/>
@@ -8925,13 +8887,6 @@ buttons.</text>
 <pinref part="CON3" gate="1" pin="3"/>
 <wire x1="226.06" y1="66.04" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="66.04" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="POWER_ENABLE" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PTD4"/>
-<wire x1="187.96" y1="167.64" x2="205.74" y2="167.64" width="0.1524" layer="91"/>
-<label x="195.58" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA4" class="0">
@@ -9111,14 +9066,14 @@ buttons.</text>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="10.16" y1="2.54" x2="10.16" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
+<pinref part="LED0" gate="G$1" pin="A"/>
 <wire x1="22.86" y1="2.54" x2="22.86" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
