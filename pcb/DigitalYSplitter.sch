@@ -8810,13 +8810,8 @@ buttons.</text>
 <junction x="322.58" y="210.82"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PTC5"/>
-<wire x1="187.96" y1="180.34" x2="205.74" y2="180.34" width="0.1524" layer="91"/>
-<label x="195.58" y="180.34" size="1.778" layer="95"/>
-</segment>
 </net>
-<net name="FLASH_MOSI" class="0">
+<net name="INPUT_MOSI" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PTC6"/>
 <wire x1="205.74" y1="177.8" x2="187.96" y2="177.8" width="0.1524" layer="91"/>
@@ -8832,11 +8827,6 @@ buttons.</text>
 <wire x1="317.5" y1="213.36" x2="317.5" y2="208.28" width="0.1524" layer="91"/>
 <junction x="317.5" y="213.36"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PTC7"/>
-<wire x1="187.96" y1="175.26" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
-<label x="195.58" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -9075,6 +9065,20 @@ buttons.</text>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="LED0" gate="G$1" pin="A"/>
 <wire x1="22.86" y1="2.54" x2="22.86" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INPUT_SCK" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PTC5"/>
+<wire x1="187.96" y1="180.34" x2="205.74" y2="180.34" width="0.1524" layer="91"/>
+<label x="195.58" y="180.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INPUT_MISO" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PTC7"/>
+<wire x1="187.96" y1="175.26" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
+<label x="195.58" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

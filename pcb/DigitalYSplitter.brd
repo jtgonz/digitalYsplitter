@@ -17306,20 +17306,17 @@ Modified from Laen's PCB Order Design Rules</description>
 <wire x1="26.5" y1="10.5" x2="27.15" y2="10.5" width="0.2032" layer="1"/>
 </signal>
 <signal name="FLASH_SCK">
-<contactref element="U1" pad="26"/>
 <contactref element="D3" pad="C"/>
 <contactref element="R5" pad="1"/>
 <wire x1="18.55" y1="18.1" x2="20.15" y2="18.1" width="0.2032" layer="1"/>
-<wire x1="19.5" y1="15.275" x2="19.5" y2="16.4" width="0.2032" layer="1"/>
 <wire x1="19.5" y1="16.4" x2="18.6" y2="17.3" width="0.2032" layer="1"/>
 <wire x1="18.6" y1="17.3" x2="18.6" y2="18.05" width="0.2032" layer="1"/>
 <wire x1="18.6" y1="18.05" x2="18.55" y2="18.1" width="0.2032" layer="1"/>
 </signal>
-<signal name="FLASH_MOSI">
+<signal name="INPUT_MOSI">
 <contactref element="U1" pad="27"/>
 </signal>
 <signal name="FLASH_MISO">
-<contactref element="U1" pad="28"/>
 <contactref element="D2" pad="C"/>
 <contactref element="R3" pad="1"/>
 <wire x1="20.05" y1="20.2" x2="18.55" y2="20.2" width="0.2032" layer="1"/>
@@ -17327,7 +17324,6 @@ Modified from Laen's PCB Order Design Rules</description>
 <wire x1="18" y1="20.2" x2="17.6" y2="19.8" width="0.2032" layer="1"/>
 <wire x1="17.6" y1="19.8" x2="17.6" y2="17.5" width="0.2032" layer="1"/>
 <wire x1="17.6" y1="17.5" x2="18.5" y2="16.6" width="0.2032" layer="1"/>
-<wire x1="18.5" y1="16.6" x2="18.5" y2="15.275" width="0.2032" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="U1" pad="19"/>
@@ -17583,6 +17579,12 @@ Modified from Laen's PCB Order Design Rules</description>
 <contactref element="LED0" pad="A"/>
 <wire x1="11.35" y1="-0.6" x2="11.35" y2="-1.7" width="0.2032" layer="1"/>
 <wire x1="11.35" y1="-1.7" x2="11.75" y2="-2.1" width="0.2032" layer="1"/>
+</signal>
+<signal name="INPUT_SCK">
+<contactref element="U1" pad="26"/>
+</signal>
+<signal name="INPUT_MISO">
+<contactref element="U1" pad="28"/>
 </signal>
 </signals>
 <errors>
