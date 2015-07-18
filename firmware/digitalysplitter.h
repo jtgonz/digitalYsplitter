@@ -48,18 +48,6 @@
 #define LED_3_PIN           5   // APA102, PB0
 #define LED_4_PIN           6   // WS2812, PB1
 
-/*
-// Fadecandy interface defines
-#define LUT_CH_SIZE             257
-#define LUT_TOTAL_SIZE          (LUT_CH_SIZE * 3)
-
-// USB packet layout
-#define PIXELS_PER_PACKET       21  // 63 / 3
-#define LUTENTRIES_PER_PACKET   31
-#define PACKETS_PER_FRAME        9  // 170 / 21
-#define PACKETS_PER_LUT          1  // originally 25
-*/
-
 // Initialize the board hardware (buttons, status led, LED control pins)
 extern void initBoard();
 

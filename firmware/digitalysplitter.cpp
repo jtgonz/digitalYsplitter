@@ -11,35 +11,15 @@ void initBoard() {
     pinMode(DATA_B_PIN, OUTPUT);
     pinMode(CLOCK_B_PIN, OUTPUT);
 
+    pinMode(LED_0_PIN, OUTPUT);
+    pinMode(LED_1_PIN, OUTPUT);
+    pinMode(LED_2_PIN, OUTPUT);
+    pinMode(LED_3_PIN, OUTPUT);
+    pinMode(LED_4_PIN, OUTPUT);
 
-    // TODO: Use pinmode for these
-
-    // LED 0
-    PORTA_PCR1 = PORT_PCR_MUX(1) | PORT_PCR_DSE | PORT_PCR_SRE;
-    GPIOA_PDDR |= (1<<1);
-
-    // LED 1
-    PORTA_PCR2 = PORT_PCR_MUX(1) | PORT_PCR_DSE | PORT_PCR_SRE;
-    GPIOA_PDDR |= (1<<2);
-
-    // LED 2
-    PORTA_PCR4 = PORT_PCR_MUX(1) | PORT_PCR_DSE | PORT_PCR_SRE;
-    GPIOA_PDDR |= (1<<4);
-
-    // LED 3
-    PORTB_PCR0 = PORT_PCR_MUX(1) | PORT_PCR_DSE | PORT_PCR_SRE;
-    GPIOB_PDDR |= (1<<0);
-
-    // LED 4
-    PORTB_PCR1 = PORT_PCR_MUX(1) | PORT_PCR_DSE | PORT_PCR_SRE;
-    GPIOB_PDDR |= (1<<1);
-
-
-//    setStatusLed(LED_0_PIN, 255);
-//    setStatusLed(LED_1_PIN, 255);
-//    setStatusLed(LED_2_PIN, 255);
-//    setStatusLed(LED_3_PIN, 255);
-//    setStatusLed(LED_4_PIN, 255);
+    // TODO: delete me!
+    pinMode(DATA_IN_PIN, OUTPUT);
+    pinMode(CLOCK_IN_PIN, OUTPUT);
 }
 
 void setStatusLed(uint8_t pin, uint8_t value) {
