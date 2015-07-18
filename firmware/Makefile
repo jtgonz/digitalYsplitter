@@ -11,7 +11,7 @@ OBJDUMP = arm-none-eabi-objdump
 SIZE = arm-none-eabi-size
 
 # Bootloader to include in whole-chip .hex image
-FCBOOT_IMAGE = ../bin/lightbuddy-boot-v100.hex
+FCBOOT_IMAGE = ../bin/digitalysplitter-boot-v100.hex
 
 # Configuration options
 OPTIONS += -DF_CPU=48000000 -D__MK20DN64__ -DUSB_SERIAL_FC_DFU
@@ -19,7 +19,7 @@ OPTIONS += -DF_CPU=48000000 -D__MK20DN64__ -DUSB_SERIAL_FC_DFU
 #######################################################
 
 # The name of your project (used to name the compiled .dfu file)
-TARGET = lightbuddy-firmware
+TARGET = digitalysplitter-firmware
 
 # Temporary .hex file for application image only, without bootloader
 APP_HEX = app-image.hex
@@ -82,7 +82,7 @@ $(TARGET).elf: $(OBJS) $(LDSCRIPT)
 	(grep -v :00000001FF $(FCBOOT_IMAGE); cat $(APP_HEX)) > $@
 
 install: $(TARGET).dfu
-	$(DFU_UTIL) -d 1d50 -D $<
+	$(DFU_UTIL) -d 1209 -D $<
 
 benchmark: install
 	python benchmark.py

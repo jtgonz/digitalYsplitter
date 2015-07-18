@@ -8294,6 +8294,9 @@ buttons.</text>
 <wire x1="104.14" y1="-48.26" x2="251.46" y2="-48.26" width="0.6096" layer="94"/>
 <wire x1="251.46" y1="35.56" x2="251.46" y2="-48.26" width="0.6096" layer="94"/>
 <text x="109.22" y="25.4" size="5.08" layer="94">Output B</text>
+<text x="261.62" y="170.18" size="1.778" layer="91">Design Note:
+This is a simple 5-&gt;3.3V level shifter.
+Need to test if it's fast enough for 10MHz clocks.</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="81.28" y="215.9"/>
@@ -8400,30 +8403,30 @@ buttons.</text>
 <instance part="R5" gate="G$1" x="309.88" y="210.82" rot="R180"/>
 <instance part="D2" gate="G$1" x="317.5" y="205.74" rot="R90"/>
 <instance part="D3" gate="G$1" x="322.58" y="205.74" rot="R90"/>
-<instance part="R6" gate="G$1" x="35.56" y="7.62" rot="R90"/>
-<instance part="LED2" gate="G$1" x="35.56" y="-2.54"/>
-<instance part="3V1" gate="G$1" x="35.56" y="17.78" smashed="yes">
-<attribute name="VALUE" x="33.02" y="19.05" size="1.778" layer="96"/>
+<instance part="R6" gate="G$1" x="55.88" y="0" rot="R90"/>
+<instance part="LED2" gate="G$1" x="55.88" y="-10.16"/>
+<instance part="3V1" gate="G$1" x="55.88" y="10.16" smashed="yes">
+<attribute name="VALUE" x="53.34" y="11.43" size="1.778" layer="96"/>
 </instance>
-<instance part="R7" gate="G$1" x="48.26" y="7.62" rot="R90"/>
-<instance part="LED3" gate="G$1" x="48.26" y="-2.54"/>
-<instance part="3V4" gate="G$1" x="48.26" y="17.78" smashed="yes">
-<attribute name="VALUE" x="45.72" y="19.05" size="1.778" layer="96"/>
+<instance part="R7" gate="G$1" x="68.58" y="0" rot="R90"/>
+<instance part="LED3" gate="G$1" x="68.58" y="-10.16"/>
+<instance part="3V4" gate="G$1" x="68.58" y="10.16" smashed="yes">
+<attribute name="VALUE" x="66.04" y="11.43" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="60.96" y="7.62" rot="R90"/>
-<instance part="LED4" gate="G$1" x="60.96" y="-2.54"/>
-<instance part="3V5" gate="G$1" x="60.96" y="17.78" smashed="yes">
-<attribute name="VALUE" x="58.42" y="19.05" size="1.778" layer="96"/>
+<instance part="R8" gate="G$1" x="81.28" y="0" rot="R90"/>
+<instance part="LED4" gate="G$1" x="81.28" y="-10.16"/>
+<instance part="3V5" gate="G$1" x="81.28" y="10.16" smashed="yes">
+<attribute name="VALUE" x="78.74" y="11.43" size="1.778" layer="96"/>
 </instance>
-<instance part="R9" gate="G$1" x="10.16" y="7.62" rot="R90"/>
-<instance part="LED1" gate="G$1" x="10.16" y="-2.54"/>
-<instance part="3V6" gate="G$1" x="10.16" y="17.78" smashed="yes">
-<attribute name="VALUE" x="7.62" y="19.05" size="1.778" layer="96"/>
+<instance part="R9" gate="G$1" x="43.18" y="0" rot="R90"/>
+<instance part="LED1" gate="G$1" x="43.18" y="-10.16"/>
+<instance part="3V6" gate="G$1" x="43.18" y="10.16" smashed="yes">
+<attribute name="VALUE" x="40.64" y="11.43" size="1.778" layer="96"/>
 </instance>
-<instance part="R10" gate="G$1" x="22.86" y="7.62" rot="R90"/>
-<instance part="LED0" gate="G$1" x="22.86" y="-2.54"/>
-<instance part="3V7" gate="G$1" x="22.86" y="17.78" smashed="yes">
-<attribute name="VALUE" x="20.32" y="19.05" size="1.778" layer="96"/>
+<instance part="R10" gate="G$1" x="30.48" y="0" rot="R90"/>
+<instance part="LED0" gate="G$1" x="30.48" y="-10.16"/>
+<instance part="3V7" gate="G$1" x="30.48" y="10.16" smashed="yes">
+<attribute name="VALUE" x="27.94" y="11.43" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8707,27 +8710,27 @@ buttons.</text>
 <segment>
 <pinref part="3V1" gate="G$1" pin="+3V3"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="15.24" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="7.62" x2="55.88" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="3V4" gate="G$1" pin="+3V3"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="15.24" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="7.62" x2="68.58" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="3V5" gate="G$1" pin="+3V3"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="15.24" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="7.62" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="3V6" gate="G$1" pin="+3V3"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="7.62" x2="43.18" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="3V7" gate="G$1" pin="+3V3"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="15.24" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="7.62" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TCLK" class="0">
@@ -8767,8 +8770,8 @@ buttons.</text>
 </segment>
 <segment>
 <pinref part="LED0" gate="G$1" pin="C"/>
-<wire x1="22.86" y1="-7.62" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
-<label x="22.86" y="-15.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="30.48" y1="-15.24" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
+<label x="30.48" y="-22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -8784,8 +8787,8 @@ buttons.</text>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="-15.24" width="0.1524" layer="91"/>
-<label x="10.16" y="-15.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="43.18" y1="-15.24" x2="43.18" y2="-22.86" width="0.1524" layer="91"/>
+<label x="43.18" y="-22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="CLOCK_B" class="0">
@@ -8892,8 +8895,8 @@ buttons.</text>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="35.56" y1="-7.62" x2="35.56" y2="-15.24" width="0.1524" layer="91"/>
-<label x="35.56" y="-15.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="55.88" y1="-15.24" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
+<label x="55.88" y="-22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PB0" class="0">
@@ -8909,8 +8912,8 @@ buttons.</text>
 </segment>
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="48.26" y1="-7.62" x2="48.26" y2="-15.24" width="0.1524" layer="91"/>
-<label x="48.26" y="-15.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="68.58" y1="-15.24" x2="68.58" y2="-22.86" width="0.1524" layer="91"/>
+<label x="68.58" y="-22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PB1" class="0">
@@ -8926,8 +8929,8 @@ buttons.</text>
 </segment>
 <segment>
 <pinref part="LED4" gate="G$1" pin="C"/>
-<wire x1="60.96" y1="-7.62" x2="60.96" y2="-15.24" width="0.1524" layer="91"/>
-<label x="60.96" y="-15.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="81.28" y1="-15.24" x2="81.28" y2="-22.86" width="0.1524" layer="91"/>
+<label x="81.28" y="-22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -9036,35 +9039,35 @@ buttons.</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="35.56" y1="2.54" x2="35.56" y2="0" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-5.08" x2="55.88" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="48.26" y1="2.54" x2="48.26" y2="0" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-5.08" x2="68.58" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="60.96" y1="2.54" x2="60.96" y2="0" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-5.08" x2="81.28" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="10.16" y1="2.54" x2="10.16" y2="0" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-5.08" x2="43.18" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="LED0" gate="G$1" pin="A"/>
-<wire x1="22.86" y1="2.54" x2="22.86" y2="0" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-5.08" x2="30.48" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INPUT_SCK" class="0">

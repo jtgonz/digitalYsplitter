@@ -84,9 +84,9 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 
 
 #if defined(USB_SERIAL_FC_DFU)
-  #define VENDOR_ID		0x1D50
-  #define PRODUCT_ID		0x60aa
-  #define DEVICE_VER		0x0020
+  #define VENDOR_ID		0x1209
+  #define PRODUCT_ID		0x8889
+  #define DEVICE_VER		0x0010
 
   #define DEVICE_CLASS          0xEF  // Miscellaneous
   #define DEVICE_SUBCLASS       0x02  // Common class
@@ -94,8 +94,8 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 
   #define MANUFACTURER_NAME	{'B','l','i','n','k','i','n','l','a','b','s'}
   #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'L','i','g','h','t','B','u','d','d','y'}
-  #define PRODUCT_NAME_LEN	10
+  #define PRODUCT_NAME		{'D','i','g','i','t','a','l','Y','S','p','l','i','t','t','e','r'}
+  #define PRODUCT_NAME_LEN	16
   #define SERIAL_NAME           {'L','i','g','h','t','B','u','d','d','y',' ','S','e','r','i','a','l'}
   #define SERIAL_NAME_LEN       17
   #define FC_NAME               {'L','i','g','h','t','B','u','d','d','y',' ','F','a','d','e','c','a','n','d','y'}

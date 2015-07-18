@@ -869,6 +869,7 @@ void usb_isr(void)
 				} else {
 					b->desc = BDT_DESC(64, ((uint32_t)b & 8) ? DATA1 : DATA0);
 				}
+                        }
 
 		}
 		USB0_ISTAT = USB_ISTAT_TOKDNE;
@@ -935,8 +936,6 @@ void usb_isr(void)
 		//serial_print("sleep\n");
 		USB0_ISTAT = USB_ISTAT_SLEEP;
 	}
-    }
-
 }
 
 

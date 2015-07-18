@@ -31,20 +31,24 @@
 #define BUTTON_A            0   // First button
 #define BUTTON_B            1   // First button
 
-#define BUTTON_A_PIN        5   // Button A: Port D7
-#define BUTTON_B_PIN        20  // Button B: Port D5
+#define BUTTON_A_PIN        17  // Button A: PD7
+#define BUTTON_B_PIN        15  // Button B: PD5
 
-#define DATA_A_PIN          10  // Data output pin A: Port C4
-#define CLOCK_A_PIN         9   // Clock output pin A: Port C3
-#define DATA_B_PIN          23  // Data output pin B: Port C2
-#define CLOCK_B_PIN         22  // Clock output pin B: Port C1
+#define DATA_IN_PIN         13  // Data input: PC7 (normally use as SPI MISO)
+#define CLOCK_IN_PIN        11  // Clock input: PC5 (normally use as SPI CLK)
 
-#define LED_0_PIN           xx  // '30', PTA2
-#define LED_1_PIN           xx  // '60', PTA1
-#define LED_2_PIN           xx  // '120', PTA4
-#define LED_3_PIN           xx  // APA102, PTB0
-#define LED_4_PIN           xx  // WS2812, PTB1
+#define DATA_A_PIN          10  // Data output pin A: PC4
+#define CLOCK_A_PIN         9   // Clock output pin A: PC3
+#define DATA_B_PIN          8   // Data output pin B: PC2
+#define CLOCK_B_PIN         7   // Clock output pin B: PC1
 
+#define LED_0_PIN           1   // '30', PA1
+#define LED_1_PIN           2   // '60', PA2
+#define LED_2_PIN           4   // '120', PA4
+#define LED_3_PIN           5   // APA102, PB0
+#define LED_4_PIN           6   // WS2812, PB1
+
+/*
 // Fadecandy interface defines
 #define LUT_CH_SIZE             257
 #define LUT_TOTAL_SIZE          (LUT_CH_SIZE * 3)
@@ -54,14 +58,15 @@
 #define LUTENTRIES_PER_PACKET   31
 #define PACKETS_PER_FRAME        9  // 170 / 21
 #define PACKETS_PER_LUT          1  // originally 25
-
+*/
 
 // Initialize the board hardware (buttons, status led, LED control pins)
 extern void initBoard();
 
 // Set the brightness of the status LED
+// @param pin Pin that the LED is connected to
 // @param value LED brightness 0 = off, 255 = on
-extern void setStatusLed(uint8_t value);
+extern void setStatusLed(uint8_t led, uint8_t value);
 
 // Refresh the watchdog, so that the board doesn't reset
 static inline void watchdog_refresh(void)

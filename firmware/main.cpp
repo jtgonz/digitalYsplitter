@@ -29,7 +29,6 @@
 #include <stdio.h>
 #include "WProgram.h"
 #include "arm_math.h"
-#include "HardwareSerial.h"
 #include "usb_serial.h"
 #include "usb_dev.h"
 
@@ -78,15 +77,44 @@ void setupWatchdog() {
     WDOG_TOVALL = (watchdog_timeout)       & 0xFFFF;
 }
 
+
+// For board bringup
+#define OUTPUT_COUNT 11
+uint8_t outputs[OUTPUT_COUNT] = {
+    LED_0_PIN,
+    LED_1_PIN,
+    LED_2_PIN,
+    LED_3_PIN,
+    LED_4_PIN,
+    DATA_A_PIN,
+    CLOCK_A_PIN,
+    DATA_B_PIN,
+    CLOCK_B_PIN,
+    DATA_IN_PIN,
+    CLOCK_IN_PIN
+};
+
+// For board bringup
+void toggleOutput(uint8_t output) {
+    for(int i = 0; i < OUTPUT_COUNT; i++) {
+        digitalWrite(outputs[i], HIGH);
+    }
+    digitalWrite(outputs[output], LOW);
+}
+
+int currentOutput = 0;
+
 extern "C" int main()
 {
     setupWatchdog();
 
     initBoard();
 
+    toggleOutput(currentOutput);
+
     userButtons.setup();
 
-    dmxSetup();
+//    dmxSetup();
 
     serialReset();
 
@@ -97,15 +125,9 @@ extern "C" int main()
         // TODO: put this in an ISR? Make the buttons do pin change interrupts?
         userButtons.buttonTask();
 
-        #define BRIGHTNESS_COUNT 5
-        static int brightnessLevels[BRIGHTNESS_COUNT] = {30,60,100,150,255};
-        static int brightnessStep = BRIGHTNESS_COUNT-1;
-
-        dmxSetBrightness(brightnessLevels[brightnessStep]);
-
         // If the flash wasn't initialized, show a default flashing pattern
-        count_up_loop();
-        dmxShow();
+//        count_up_loop();
+//        dmxShow();
 
         // Check for serial data
         if(usb_serial_available() > 0) {
@@ -116,10 +138,12 @@ extern "C" int main()
             uint8_t button = userButtons.getPressed();
     
             if(button == BUTTON_A) {
-                // TODO: Something?
+                currentOutput = (currentOutput+1)%OUTPUT_COUNT;
+                toggleOutput(currentOutput);
             }
             else if(button == BUTTON_B) {
-                // TODO: Something?
+                currentOutput = (currentOutput+OUTPUT_COUNT-1)%OUTPUT_COUNT;
+                toggleOutput(currentOutput);
             }
         }
 
