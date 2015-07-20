@@ -8002,165 +8002,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-DiscreteSemi">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find discrete semiconductors- transistors, diodes, TRIACs, optoisolators, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="DIODE-ZENER">
-<wire x1="-1.778" y1="0.762" x2="1.778" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.778" y1="0" x2="1.778" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="1.778" y1="-0.762" x2="-1.778" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0" width="0.2032" layer="21"/>
-<wire x1="-1.778" y1="0" x2="-1.778" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.778" y1="0" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="-1.778" y1="0" x2="-2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.778" y1="0.762" x2="1.778" y2="0" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="P$1" x="-3.556" y="0" drill="0.9"/>
-<pad name="P$2" x="3.556" y="0" drill="0.9"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.397" y="-0.508" size="0.4064" layer="21">&gt;Value</text>
-</package>
-<package name="SMB-DIODE">
-<description>&lt;b&gt;Diode&lt;/b&gt;&lt;p&gt;
-Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</description>
-<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.1016" layer="21"/>
-<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.1016" layer="21"/>
-<wire x1="-2.261" y1="-1.905" x2="-2.261" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="2.261" y1="-1.905" x2="2.261" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="0.643" y1="1" x2="-0.73" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.73" y1="0" x2="0.643" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.643" y1="-1" x2="0.643" y2="1" width="0.2032" layer="21"/>
-<wire x1="-0.73" y1="1" x2="-0.73" y2="-1" width="0.2032" layer="21"/>
-<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<text x="-2.159" y="2.159" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
-<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
-</package>
-<package name="SOD-323">
-<wire x1="-0.9" y1="0.65" x2="-0.5" y2="0.65" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.65" x2="0.9" y2="0.65" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="-0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="-0.65" x2="0.9" y2="-0.65" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
-<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SOD-123">
-<description>100V/150mA 1N4148 - Super Cheap</description>
-<wire x1="-1.3" y1="0.775" x2="-0.5" y2="0.775" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.775" x2="1.3" y2="0.775" width="0.2032" layer="21"/>
-<wire x1="-1.3" y1="-0.775" x2="-0.5" y2="-0.775" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="-0.775" x2="1.3" y2="-0.775" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.775" x2="-0.5" y2="-0.775" width="0.2032" layer="21"/>
-<smd name="C" x="-1.575" y="0" dx="0.9" dy="0.95" layer="1"/>
-<smd name="A" x="1.575" y="0" dx="0.9" dy="0.95" layer="1"/>
-<text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
-<wire x1="-1.35" y1="0.775" x2="1.35" y2="0.775" width="0.127" layer="51"/>
-<wire x1="1.35" y1="0.775" x2="1.35" y2="-0.775" width="0.127" layer="51"/>
-<wire x1="1.35" y1="-0.775" x2="-1.35" y2="-0.775" width="0.127" layer="51"/>
-<wire x1="-1.35" y1="-0.775" x2="-1.35" y2="0.775" width="0.127" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="DIODE-ZENER">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.778" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.27" width="0.254" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIODE-ZENER" prefix="D">
-<description>Zener Diode
-Production Part - 8199
-3.4V Zener Voltage</description>
-<gates>
-<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="DIODE-ZENER">
-<connects>
-<connect gate="G$1" pin="A" pad="P$2"/>
-<connect gate="G$1" pin="C" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMB" package="SMB-DIODE">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3.3V" package="SOD-323">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-11284"/>
-<attribute name="VALUE" value="3.3V" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="16V" package="SOD-123">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-12440" constant="no"/>
-<attribute name="VALUE" value="16V" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="5.6V" package="SOD-323">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-12442" constant="no"/>
-<attribute name="VALUE" value="5.6V" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8223,10 +8064,6 @@ Production Part - 8199
 <part name="CON5" library="blinkinlabs" deviceset="4-PIN_DUPONT" device="" value="LED_OUT"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
-<part name="R3" library="adafruit" deviceset="R-US_" device="R0402" value="470"/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="R0402" value="470"/>
-<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
-<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0402" value="470"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="STATUS"/>
 <part name="3V1" library="supply1" deviceset="+3V3" device=""/>
@@ -8242,6 +8079,12 @@ Production Part - 8199
 <part name="R10" library="adafruit" deviceset="R-US_" device="R0402" value="470"/>
 <part name="LED0" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="STATUS"/>
 <part name="3V7" library="supply1" deviceset="+3V3" device=""/>
+<part name="U2" library="74xx-little-us" deviceset="74*1G17" device="DCK" technology="LVC"/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="U8" library="74xx-little-us" deviceset="74*1G17" device="DCK" technology="LVC"/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="3V8" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8294,9 +8137,6 @@ buttons.</text>
 <wire x1="104.14" y1="-48.26" x2="251.46" y2="-48.26" width="0.6096" layer="94"/>
 <wire x1="251.46" y1="35.56" x2="251.46" y2="-48.26" width="0.6096" layer="94"/>
 <text x="109.22" y="25.4" size="5.08" layer="94">Output B</text>
-<text x="261.62" y="170.18" size="1.778" layer="91">Design Note:
-This is a simple 5-&gt;3.3V level shifter.
-Need to test if it's fast enough for 10MHz clocks.</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="81.28" y="215.9"/>
@@ -8314,7 +8154,7 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 <instance part="C4" gate="G$1" x="124.46" y="210.82"/>
 <instance part="GND9" gate="1" x="124.46" y="200.66"/>
 <instance part="GND15" gate="1" x="81.28" y="205.74"/>
-<instance part="GND10" gate="1" x="302.26" y="195.58"/>
+<instance part="GND10" gate="1" x="274.32" y="193.04"/>
 <instance part="C1" gate="G$1" x="66.04" y="215.9"/>
 <instance part="GND12" gate="1" x="35.56" y="78.74"/>
 <instance part="P+9" gate="1" x="116.84" y="226.06" smashed="yes">
@@ -8395,14 +8235,10 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 </instance>
 <instance part="GND14" gate="1" x="116.84" y="-15.24"/>
 <instance part="CON5" gate="1" x="233.68" y="-22.86" rot="R180"/>
-<instance part="P+8" gate="1" x="302.26" y="223.52" smashed="yes">
-<attribute name="VALUE" x="299.72" y="224.79" size="1.778" layer="96"/>
+<instance part="P+8" gate="1" x="274.32" y="220.98" smashed="yes">
+<attribute name="VALUE" x="271.78" y="222.25" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="297.18" y="213.36" rot="MR180"/>
-<instance part="R3" gate="G$1" x="309.88" y="213.36" rot="R180"/>
-<instance part="R5" gate="G$1" x="309.88" y="210.82" rot="R180"/>
-<instance part="D2" gate="G$1" x="317.5" y="205.74" rot="R90"/>
-<instance part="D3" gate="G$1" x="322.58" y="205.74" rot="R90"/>
+<instance part="JP1" gate="G$1" x="269.24" y="210.82" rot="MR180"/>
 <instance part="R6" gate="G$1" x="55.88" y="0" rot="R90"/>
 <instance part="LED2" gate="G$1" x="55.88" y="-10.16"/>
 <instance part="3V1" gate="G$1" x="55.88" y="10.16" smashed="yes">
@@ -8427,6 +8263,24 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 <instance part="LED0" gate="G$1" x="30.48" y="-10.16"/>
 <instance part="3V7" gate="G$1" x="30.48" y="10.16" smashed="yes">
 <attribute name="VALUE" x="27.94" y="11.43" size="1.778" layer="96"/>
+</instance>
+<instance part="U2" gate="G$1" x="294.64" y="218.44" smashed="yes">
+<attribute name="NAME" x="295.91" y="221.615" size="1.778" layer="95"/>
+<attribute name="VALUE" x="285.75" y="210.82" size="1.778" layer="96"/>
+</instance>
+<instance part="U2" gate="G$2" x="335.28" y="228.6"/>
+<instance part="GND16" gate="1" x="335.28" y="215.9"/>
+<instance part="U8" gate="G$1" x="294.64" y="203.2" smashed="yes">
+<attribute name="NAME" x="295.91" y="206.375" size="1.778" layer="95"/>
+<attribute name="VALUE" x="285.75" y="195.58" size="1.778" layer="96"/>
+</instance>
+<instance part="U8" gate="G$2" x="327.66" y="228.6"/>
+<instance part="GND17" gate="1" x="327.66" y="215.9"/>
+<instance part="3V3" gate="G$1" x="327.66" y="241.3" smashed="yes">
+<attribute name="VALUE" x="325.12" y="242.57" size="1.778" layer="96"/>
+</instance>
+<instance part="3V8" gate="G$1" x="335.28" y="241.3" smashed="yes">
+<attribute name="VALUE" x="332.74" y="242.57" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8552,15 +8406,17 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="302.26" y1="208.28" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="302.26" y1="200.66" x2="302.26" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="203.2" x2="322.58" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="200.66" x2="317.5" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="317.5" y1="200.66" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="203.2" x2="317.5" y2="200.66" width="0.1524" layer="91"/>
-<junction x="317.5" y="200.66"/>
+<wire x1="274.32" y1="205.74" x2="274.32" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$2" pin="GND"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="335.28" y1="218.44" x2="335.28" y2="220.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U8" gate="G$2" pin="GND"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="327.66" y1="220.98" x2="327.66" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8664,7 +8520,7 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
-<wire x1="302.26" y1="220.98" x2="302.26" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="218.44" x2="274.32" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -8731,6 +8587,16 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 <pinref part="3V7" gate="G$1" pin="+3V3"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="7.62" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U8" gate="G$2" pin="VCC"/>
+<wire x1="327.66" y1="236.22" x2="327.66" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="3V3" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$2" pin="VCC"/>
+<wire x1="335.28" y1="238.76" x2="335.28" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="3V8" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="TCLK" class="0">
@@ -8803,33 +8669,11 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 <label x="162.56" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FLASH_SCK" class="0">
-<segment>
-<wire x1="314.96" y1="210.82" x2="322.58" y2="210.82" width="0.1524" layer="91"/>
-<label x="327.66" y="210.82" size="1.778" layer="95"/>
-<pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="322.58" y1="210.82" x2="330.2" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="210.82" x2="322.58" y2="208.28" width="0.1524" layer="91"/>
-<junction x="322.58" y="210.82"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="INPUT_MOSI" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PTC6"/>
 <wire x1="205.74" y1="177.8" x2="187.96" y2="177.8" width="0.1524" layer="91"/>
 <label x="195.58" y="177.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="FLASH_MISO" class="0">
-<segment>
-<wire x1="330.2" y1="213.36" x2="317.5" y2="213.36" width="0.1524" layer="91"/>
-<label x="327.66" y="213.36" size="1.778" layer="95"/>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="317.5" y1="213.36" x2="314.96" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="213.36" x2="317.5" y2="208.28" width="0.1524" layer="91"/>
-<junction x="317.5" y="213.36"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -9024,15 +8868,19 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="304.8" y1="213.36" x2="302.26" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="210.82" x2="279.4" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="210.82" x2="279.4" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="I"/>
+<wire x1="279.4" y1="218.44" x2="284.48" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="3"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="304.8" y1="210.82" x2="302.26" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="U8" gate="G$1" pin="I"/>
+<wire x1="284.48" y1="203.2" x2="279.4" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="203.2" x2="279.4" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="208.28" x2="274.32" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -9076,12 +8924,22 @@ Need to test if it's fast enough for 10MHz clocks.</text>
 <wire x1="187.96" y1="180.34" x2="205.74" y2="180.34" width="0.1524" layer="91"/>
 <label x="195.58" y="180.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U8" gate="G$1" pin="O"/>
+<wire x1="304.8" y1="203.2" x2="322.58" y2="203.2" width="0.1524" layer="91"/>
+<label x="307.34" y="203.2" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="INPUT_MISO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PTC7"/>
 <wire x1="187.96" y1="175.26" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
 <label x="195.58" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="O"/>
+<wire x1="304.8" y1="218.44" x2="322.58" y2="218.44" width="0.1524" layer="91"/>
+<label x="307.34" y="218.44" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

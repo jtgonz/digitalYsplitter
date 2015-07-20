@@ -79,7 +79,7 @@ void setupWatchdog() {
 
 
 // For board bringup
-#define OUTPUT_COUNT 11
+#define OUTPUT_COUNT 9
 uint8_t outputs[OUTPUT_COUNT] = {
     LED_0_PIN,
     LED_1_PIN,
@@ -90,8 +90,8 @@ uint8_t outputs[OUTPUT_COUNT] = {
     CLOCK_A_PIN,
     DATA_B_PIN,
     CLOCK_B_PIN,
-    DATA_IN_PIN,
-    CLOCK_IN_PIN
+//    DATA_IN_PIN,
+//    CLOCK_IN_PIN
 };
 
 // For board bringup
@@ -110,6 +110,9 @@ extern "C" int main()
 
     initBoard();
 
+    pinMode(DATA_IN_PIN, INPUT);
+    pinMode(CLOCK_IN_PIN, INPUT);
+
     toggleOutput(currentOutput);
 
     userButtons.setup();
@@ -124,6 +127,19 @@ extern "C" int main()
        
         // TODO: put this in an ISR? Make the buttons do pin change interrupts?
         userButtons.buttonTask();
+
+        if(digitalRead(DATA_IN_PIN)) {
+            digitalWrite(LED_0_PIN, HIGH);
+        }
+        else {
+            digitalWrite(LED_0_PIN, LOW);
+        }
+        if(digitalRead(CLOCK_IN_PIN)) {
+            digitalWrite(LED_1_PIN, HIGH);
+        }
+        else {
+            digitalWrite(LED_1_PIN, LOW);
+        }
 
         // If the flash wasn't initialized, show a default flashing pattern
 //        count_up_loop();
